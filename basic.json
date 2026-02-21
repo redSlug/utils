@@ -1,0 +1,52 @@
+[
+  {
+    "kanji": "日",
+    "reading": "hi, nichi",
+    "definition": "day, sun"
+  },
+  {
+    "kanji": "月",
+    "reading": "tsuki, getsu",
+    "definition": "moon, month"
+  },
+  {
+    "kanji": "火",
+    "reading": "hi, ka",
+    "definition": "fire"
+  },
+  {
+    "ji": "水",
+    "reading": "mizu, sui",
+    "definition": "water"
+  },
+  {
+    "kanji": "木",
+    "reading": "ki, moku",
+    "definition": "tree, wood"
+  },
+  {
+    "kanji": "金",
+    "reading": "kane, kin",
+    "definition": "gold, money"
+  },
+  {
+    "kanji": "土",
+    "reading": "tsuchi, do",
+    "definition": "earth, soil"
+  },
+  {
+    "kanji": "人",
+    "reading": "hito, jin",
+    "definition": "person"
+  },
+  {
+    "kanji": "山",
+    "reading": "yama, san",
+    "definition": "mountain"
+  },
+  {
+    "kanji": "学",
+    "reading": "mana-bu, gaku",
+    "definition": "study, learning"
+  }
+]

@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+require "json"
+
+base = File.expand_path(__dir__)
+basic_kanji = JSON.parse(File.read(base + "/basic.json"))
+
+
+module ColorableString
+  RGB_COLOR_MAP = {
+    white: "255;255;255",
+    purple: "200;0;200",
+    cyan: "139;233;253",
+    green: "80;250;123",
+    red: "255;85;85",
+  }.freeze
+
+  refine String do
+    def fg_color(color_name)
+      rgb_val = RGB_COLOR_MAP[color_name]
+      "\e[38;2;#{rgb_val}m#{self}\e[0m"
+    end
+  end
+end
+
+class Display
+  using ColorableString
+  def pretty(string, color)
+    string.fg_color(color)
+  end
+end
+
+display = Display.new
+sample = basic_kanji.sample
+
+formatted = [
+  display.pretty("\e[1m#{sample['kanji']}\e[0m", :white),
+  display.pretty(sample['reading'], :green),
+  display.pretty(sample['definition'], :purple)
+]
+
+puts formatted.join(" ")
