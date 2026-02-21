@@ -10,3 +10,7 @@
 Used `brew install glow gum` to make this README better
 
 To read this README.md nicely, run `cat README.md | glow`
+
+# Next steps
+- have the script do an HTTP request to get the kanji from an API or something, or have a sqllite db
+- add a search feature for words or a mermaid renderer
